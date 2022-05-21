@@ -15,9 +15,13 @@ def recSigma(num):
 
 def recFactorial(num):
     if num > 1:
-        return num*(recFactorial-1)
+        return num * recFactorial(num-1)
     else:
         return 1
+
+
+print(recSigma(5))
+print(recFactorial(3))
 
 
 
